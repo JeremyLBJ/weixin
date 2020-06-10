@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+      <swiper class="swipe-class" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" circular="{{circular}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+          <image src="{{item}}" class="slide-image"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class="view_daohang">
+      <view class="active">推荐</view>
+      <view>精选</view>
+      </view>
+
+      <view class="index_list">
+        <view class="index_list_item" wx:for="{{listData}}" wx:key="id">
+          <image src="{{item.avatarurl}}" mode="aspectFill"></image>
+          <text class="index_list_text">
+            <text class="">
+              {{item.nickname}}
+            </text>
+           <text class="iconfont icon-dianzan"></text>
+              <text>100</text>
+          </text>
+        </view>
+      </view>
+    
+
+    
+  
