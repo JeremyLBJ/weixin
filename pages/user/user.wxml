@@ -1,0 +1,38 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class="user_info">
+    <image src="{{imgUrl}}"></image>
+    <text wx:if="{{canIUse}}"> 欢迎:   {{nickName}}</text>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  </view>
+</view>
+
+<view class="user_list" wx:if="{{true}}">
+  <navigator url="../editUserInfo/editUserInfo"  open-type="navigate">
+      <view class="user_list_item"  >
+        <text class="" selectable="false" >
+          编辑个人信息
+        </text>
+        <text class="inconfont icon-ziyuan1"> </text>
+      </view>
+  </navigator>
+
+  <navigator url="../friendList/friendList" open-type="navigate">
+      <view class="user_list_item">
+        <text class="" selectable="false">
+          查看好友列表
+        </text>
+        <text class="inconfont icon-ziyuan1" ></text>
+      </view>
+  </navigator>
+
+  <navigator url="../detail/detail" open-type="navigate">
+      <view class="user_list_item" >
+        <text class="" selectable="false" >
+          个人主页
+        </text>
+        <text class="inconfont icon-ziyuan1" ></text>
+      </view>
+  </navigator>
+  
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/editUserInfo/editUserInfo",
+    "pages/friendList/friendList",
+    "pages/editUserInfo/photo/photo",
+    "pages/editUserInfo/name/name",
+    "pages/editUserInfo/singertrue/singertrue",
+    "pages/editUserInfo/loaction/loaction",
+    "pages/editUserInfo/phone/phone",
+    "pages/editUserInfo/weixin/weixin"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#937bf5",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b4b5b6",
+    "selectedColor": "#937bf5",
+    "list": [
+      {
+        "iconPath": "images/tabar/index.png",
+        "selectedIconPath": "images/tabar/index_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabar/near.png",
+        "selectedIconPath": "images/tabar/near_active.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabar/message.png",
+        "selectedIconPath": "images/tabar/message_active.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabar/user.png",
+        "selectedIconPath": "images/tabar/user_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
